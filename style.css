@@ -1,73 +1,111 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background: #f4f4f9;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #2d3436;
   line-height: 1.6;
 }
 
+/* ENCABEZADO */
 header {
-  background-color: #6c5ce7;
+  background: linear-gradient(to right, #6c5ce7, #a29bfe);
   color: white;
-  padding: 30px 20px;
   text-align: center;
+  padding: 40px 20px;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* SECCIÓN PERFIL */
 .perfil {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 40px 20px;
-  gap: 20px;
-  background-color: #fff;
+  background-color: white;
+  gap: 30px;
 }
 
 .perfil img {
-  max-width: 200px;
+  max-width: 220px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .bio {
-  flex: 1;
+  max-width: 600px;
 }
 
-section h2 {
+.bio h2 {
+  font-size: 1.8rem;
   color: #6c5ce7;
   margin-bottom: 10px;
 }
 
-.intereses,
-.contacto {
-  padding: 30px 20px;
-  background-color: #f9f9f9;
+/* SECCIÓN INTERESES */
+.intereses {
+  padding: 40px 20px;
+  background-color: #f0f0ff;
 }
 
-ul {
-  list-style-type: square;
+.intereses h2 {
+  color: #6c5ce7;
+  margin-bottom: 10px;
+}
+
+.intereses ul {
   padding-left: 20px;
+}
+
+.intereses li {
+  margin-bottom: 8px;
+}
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  padding: 40px 20px;
+  background-color: #dfe6e9;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #6c5ce7;
+  margin-bottom: 15px;
 }
 
 .redes a {
   display: inline-block;
-  margin-right: 15px;
+  margin: 0 10px;
   text-decoration: none;
   color: #6c5ce7;
   font-weight: bold;
-  transition: 0.3s;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .redes a:hover {
   color: #341f97;
 }
 
+/* PIE DE PÁGINA */
 footer {
-  background-color: #dfe6e9;
+  background-color: #b2bec3;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: white;
 }
